@@ -40,7 +40,8 @@ const Navbar = () => {
           
         </div>
       </div>
-      <button className='join-mobile-btn'>Join Group</button>
+      {!state_l ? <button className='join-mobile-btn'  onClick={() => setopenPopup(true)}>Join Group</button>:
+      <button className='join-mobile-btn' >Leave Group</button>}
       {openPopup && <img src={cancel} alt="search" className='cancel-icon' onClick={() => setopenPopup(false)}/>}
       {openPopup && <div class="overlay" />}
       {openPopup && <Popupfile/>}

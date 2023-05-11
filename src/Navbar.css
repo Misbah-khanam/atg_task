@@ -94,6 +94,16 @@
     color: white;
     display: none;
 }
+@media screen and (max-width: 800px){
+    .searchForm{
+        margin-left: 0px;
+        width: 30%;
+    }
+
+    .searchForm input{
+        width: 70%;
+    }
+}
 
 @media screen and (max-width: 650px){
     .navAtg .icon{
@@ -108,4 +118,8 @@
         position: absolute;
         display: block;
     }
+    .cancel-icon{
+        margin-top: 200px;
+    }
+
 }

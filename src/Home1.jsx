@@ -9,7 +9,10 @@ const Home1 = () => {
   return (
     <div>
         <h1></h1>
-        <div className='top-rectangle'></div>
+        <div className='top-rectangle'>
+          <p >Computer Engineering</p>
+          <p className='small'>142,765 Computer Engineers follow this</p>
+        </div>
     </div>
   )
 }

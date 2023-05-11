@@ -18,14 +18,15 @@
 .post-start{
     display: flex;
     flex-direction: row;
-    width: 27%;
+    width: 35%;
     justify-content: space-between;
 }
 .post-end{
     display: flex;
     flex-direction: row;
-    width: 20%;
-    justify-content: space-around;
+    width: 40%;
+    align-items: end;
+    justify-content: end;
 }
 
 .post-end select{
@@ -57,9 +58,64 @@
     margin-top: 0px;
 }
 
+.post-head-mobile{
+    /* display: flex; */
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    padding: 3% 0 0 0;
+    display: none;
+}
+
+.post-head-mobile h6{
+    font-size: 15px;
+    margin: 0px;
+}
+
+.post-head-mobile select{
+    font-size: 12px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d9d8d8;
+}
+@media screen and (max-width: 1100px){
+    .post-btns{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 931px){
+    .post-start{
+        width: 40%;
+    }
+}
+
 @media screen and (max-width: 800px){
     .main-post-container{
         margin-top: 65%;
+    }
+    .post-btns{
+        font-size: 13px;
+    }
+    .post-start{
+        width: 43%;
+    }
+    .post-end .joinbtn button, .post-end select {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .post-head-mobile{
+        padding-top: 7%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .post-head-mobile{
+        padding-top: 10%;
     }
 }
 
@@ -67,6 +123,10 @@
     .post-head{
         display: none;
     }
+    .post-head-mobile{
+        display: flex;
+    }
+    
 }
 
 @media screen and (max-width: 300px){

@@ -36,6 +36,13 @@ const PostContainer = () => {
                         </div>
                     </div>
                 </div>
+                <center><div className='post-head-mobile'>
+                    <h6>Posts(30)</h6>
+                    <select>
+                        <option name="filter" value="filter">Filter</option>
+                        <option name="filter2" value="filter2">Filter</option>
+                    </select>
+                </div></center>
                 <Post />
             </div>
         </div>

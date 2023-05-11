@@ -8,3 +8,39 @@
     background-size: 100%;
     background-repeat: no-repeat;
 }
+
+.top-rectangle p{
+    font-size: 35px;
+    font-weight: 500;
+    color: white;
+    margin-top: 20%;
+    margin-left: 10%;
+    margin-bottom: 0px;
+}
+.top-rectangle .small{
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    margin-top: 0px;
+    margin-left: 10%;
+}
+
+@media screen and (max-width: 500px){
+    
+.top-rectangle p{
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+    margin-top: 20%;
+    margin-left: 10%;
+    margin-bottom: 0px;
+}
+
+.top-rectangle .small{
+    font-size: 15px;
+    font-weight: 300;
+    color: white;
+    margin-top: 0px;
+    margin-left: 10%;
+}
+}
