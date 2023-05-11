@@ -1,0 +1,80 @@
+.main-post-container{
+    margin-top: 500px;
+}
+
+.post-head{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    /* border: 1px solid #E0E0E0; */
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: #9a9a9a ;
+}
+
+.post-start{
+    display: flex;
+    flex-direction: row;
+    width: 27%;
+    justify-content: space-between;
+}
+.post-end{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    justify-content: space-around;
+}
+
+.post-end select{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding: 5px 8px;
+    background-color: #d9d8d8;
+    border-radius: 5px;
+    border: 1px solid #d9d8d8;
+}
+
+.post-end .joinbtn button{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding: 5px 8px;
+    background-color: rgb(8, 92, 237);
+    border: 1px solid rgb(8, 92, 237);
+    color: white;
+    border-radius: 5px;
+}
+
+.post-start .post-btns{
+    text-decoration: none;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.popup-join-group{
+    margin-top: 0px;
+}
+
+@media screen and (max-width: 800px){
+    .main-post-container{
+        margin-top: 65%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .post-head{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .post-head{
+        display: none;
+    }
+
+    .main-post-container{
+        margin-top: 75%;
+    }
+}

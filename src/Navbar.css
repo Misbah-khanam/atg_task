@@ -1,0 +1,111 @@
+.main-nav{
+    box-shadow: 0px 1px 5px #00000033;
+    z-index: 5;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    background-color: white;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(111,111,111,0.6); 
+    z-index: 4; 
+}
+
+.navAtg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 20px;
+
+}
+
+
+.acc-div{
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.b-p{
+    margin:0px 5px ;
+    font-style: bold;
+    color: blue;
+}
+
+.searchForm{
+    flex-grow: 0.3;
+    padding: 0px 12px;
+    position: relative;
+    margin-right: 10px;
+    margin-top: 15dp;
+}
+
+.searchForm input{
+    width: 100%;
+    margin: 10px;
+    padding: 8px 10px 8px 32px;
+    font-size: 13px;
+    border: solid 1px #F2F2F2;
+    border-radius: 3px;
+    border-radius: 20px ;
+    background: #F2F2F2;
+    font-weight: 600;
+    font-size: 12px;
+
+}
+
+.searchForm .search-icon{
+    position: absolute;
+    left: 28px;
+    top: 15px;
+    width: 20;
+
+}
+
+.cancel-icon{
+    margin-top: 70px;
+    z-index: 5;
+    position: fixed;
+    background-color: #F2F2F2;
+    margin-left: 70%;
+    border-radius: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.join-mobile-btn{
+    z-index: 5;
+    /* position: fixed; */
+    right: 20px;
+    margin-top: 65px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(255,255,255,0.0);
+    border: 1px solid white;
+    color: white;
+    display: none;
+}
+
+@media screen and (max-width: 650px){
+    .navAtg .icon{
+        display: none;
+    }
+
+    .navAtg form{
+        display: none;
+    }
+
+    .join-mobile-btn{
+        position: fixed;
+        display: block;
+    }
+}

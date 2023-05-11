@@ -1,0 +1,10 @@
+.top-rectangle {
+    position: absolute;
+    width: 100%;
+    height: 440px;
+    left: 0px;
+    top: 60px;
+    background: url(assets/image_atg_top.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
