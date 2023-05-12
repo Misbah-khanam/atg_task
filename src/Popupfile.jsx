@@ -35,9 +35,9 @@ const Popupfile = () => {
                             <input placeholder='First Name' /><br />
                             <input placeholder='Last Name' /><br />
                         </div>}
-                    <input placeholder='Email' /><br />
-                    <input placeholder='Password' /><br />
-                    {signin && <input placeholder='Confirm Password' />}
+                    <input placeholder='Email' type='email' /><br />
+                    <input placeholder='Password' type='password'/><br />
+                    {signin && <input placeholder='Confirm Password' type='password' />}
                     <div className='mobile-btn'>
                         {!signin ? <button onClick={handle}>Sign In</button> : <button onClick={handle}>Create</button>}
                         {signin ? <center><h6 onClick={() => setSignin(!signin)}>signin</h6></center> : <center><h6 onClick={() => setSignin(!signin)}>Create Account</h6></center>}
