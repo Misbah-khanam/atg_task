@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Post.css'
 import profile2 from './assets/color_profile.svg'
 import profile from './assets/profile_icon.svg'
@@ -17,6 +17,7 @@ import calender from './assets/calendar.svg'
 const Post = () => {
 
   const state_l = useSelector((state) => state)
+  const [follow, setfollow] = useState(false)
 
   return (
     <div className='post-location'>

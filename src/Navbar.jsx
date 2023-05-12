@@ -42,9 +42,9 @@ const Navbar = () => {
       </div>
       {!state_l ? <button className='join-mobile-btn'  onClick={() => setopenPopup(true)}>Join Group</button>:
       <button className='join-mobile-btn' >Leave Group</button>}
-      {openPopup && <img src={cancel} alt="search" className='cancel-icon' onClick={() => setopenPopup(false)}/>}
-      {openPopup && <div class="overlay" />}
-      {openPopup && <Popupfile/>}
+      {(openPopup&& !state_l)? <img src={cancel} alt="search" className='cancel-icon' onClick={() => setopenPopup(false)} />:null}
+            {(openPopup&& !state_l)? <div class="overlay" />:null}
+            { (openPopup&& !state_l)? <Popupfile />: null}
     </div>
   )
 }

@@ -6,16 +6,19 @@ import { useState } from 'react';
 import Popupfile from './Popupfile';
 import { useSelector } from 'react-redux';
 import { useEffect } from 'react';
+import cancel from './assets/icons8-cancel.svg'
 
 const PostContainer = () => {
 
 
     const [openPopup, setopenPopup] = useState(false);
-
-    const state_l = useSelector((state)=>state)
+    const state_l = useSelector((state) => state)
 
     return (
         <div>
+            {(openPopup&& !state_l)? <img src={cancel} alt="search" className='cancel-icon' onClick={() => setopenPopup(false)} />:null}
+            {(openPopup&& !state_l)? <div class="overlay" />:null}
+            { (openPopup&& !state_l)? <Popupfile />: null}
             <div className='main-post-container'>
                 <div className='post-head'>
                     <div className='post-start'>
@@ -32,7 +35,9 @@ const PostContainer = () => {
                         </select>
                         <div className='joinbtn'>
                             <img />
-                            <button onClick={() => setopenPopup(true)}>Join Group</button>
+                            {!state_l ? <button onClick={() => setopenPopup(true)}>Join Group</button> :
+                                <button>Leave Group</button>}
+
                         </div>
                     </div>
                 </div>

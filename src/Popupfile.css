@@ -10,6 +10,7 @@
     border-radius: 10px;
     z-index: 5;
     position: fixed;
+    top: 0px;
 }
 
 .green-txt{
@@ -78,6 +79,8 @@
 
 .image-div p{
     font-size: 11px;
+    color: blue;
+    cursor: pointer;
 }
 
 .popup-main .mobile-btn h6{
@@ -127,6 +130,7 @@
         width: 100%;
         margin-left: 0px;
         bottom: 0px;
+        top: 130px;
         left: 0px;
         height: 400px;
     }

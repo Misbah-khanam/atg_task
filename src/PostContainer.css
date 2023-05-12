@@ -84,6 +84,29 @@
     border-radius: 5px;
     background-color: #d9d8d8;
 }
+
+.cancel-icon{
+    margin-top: 70px;
+    z-index: 5;
+    position: fixed;
+    background-color: #F2F2F2;
+    margin-left: 70%;
+    border-radius: 20px;
+    width: 20px;
+    height: 20px;
+    top: 0px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(111,111,111,0.6); 
+    z-index: 4; 
+}
+
 @media screen and (max-width: 1100px){
     .post-btns{
         font-size: 14px;
@@ -129,6 +152,9 @@
     }
     .post-head-mobile{
         display: flex;
+    }
+    .cancel-icon{
+        margin-top: 170px;
     }
     
 }
