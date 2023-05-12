@@ -5,14 +5,38 @@
     width: 100%;
     height: 30%;
 } */
-.post-img{
+.post-img1{
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     width: 100%;
     height: 40%;
     /* position: absolute; */
     /* max-height: 150px; */
-    background: url(assets/image_atg_top.jpg);
+    background: url(assets/atg_1.jfif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.post-img2{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    height: 40%;
+    /* position: absolute; */
+    /* max-height: 150px; */
+    background: url(assets/atg_2.jfif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.post-img3{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    height: 40%;
+    /* position: absolute; */
+    /* max-height: 150px; */
+    background: url(assets/atg_3.jfif);
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -21,12 +45,24 @@
     padding: 1px;
     margin: 10px;
     width: 60%;
-    height: 300px;
+    height: 310px;
     border-radius: 5px;
     border: 1px solid #e5e5e5;
     /* box-shadow: 0px 1px 5px #00000033; */
     margin-left: 25%;
 }
+
+.post-card2{
+    padding: 1px;
+    margin: 10px;
+    width: 60%;
+    height: 200px;
+    border-radius: 5px;
+    border: 1px solid #e5e5e5;
+    /* box-shadow: 0px 1px 5px #00000033; */
+    margin-left: 25%;
+}
+
 
 .post-text{
     height: fit-content;
@@ -50,11 +86,22 @@
 
 .post-text .post-caption{
     font-size: 13px;
-    font-weight: 500;
+    font-weight: 700;
+    margin: 0px;
+    margin-bottom: 5px;
 }
 
 .post-text .post-body{
     font-size: 10px;
+}
+
+.post-text .post-body-btn{
+    border: 1px solid #a1a1a1;
+    color: coral;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 7px;
+    border-radius: 5px;
 }
 
 .post-text .post-tag{
@@ -76,10 +123,11 @@
 }
 
 .post-card-b{
-    width: 10%;
+    width: 50%;
     display: flex;
     flex-direction: row;
 }
+
 
 .view-icon{
     width: 20px;
@@ -94,9 +142,13 @@
 }
 
 .share-icon{
-    width: 15px;
-    height: 15px;
-    margin-right: 10px;
+    width: 12px;
+    height: 12px;
+    padding: 5px;
+    margin-right: 5px;
+    margin-left: 15px;
+    background-color: #e6e6e6;
+
 }
 
 .post-card-b2{
@@ -153,6 +205,72 @@
     border: none;
 }
 
+.cal-loc{
+    display: flex;
+    flex-direction: row;
+}
+
+.calender-div{
+    display: flex;
+    flex-direction: row;
+    margin: 0px 10px;
+}
+
+.location-div{
+    display: flex;
+    flex-direction: row;
+    margin: 0px 10px;
+}
+
+.calender-div p{
+    font-size: 8px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.location-div p{
+    font-size: 8px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.calender-post{
+    width: 10px;
+    height: 10px;
+}
+
+.location-post{
+    width: 10px;
+    height: 10px;
+}
+
+.post-body-total{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.options{
+    width: 20px;
+    height: 20px;
+    background: url(assets/dots-three.svg);
+    background-size: 100%;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.post-card-b button{
+    border: none;
+    position: absolute;
+    right: 10%;
+    font-size: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #c9c9c9;
+}
+
 @media screen and (max-width: 900px){
     .location-card{
         width: 30%;
@@ -161,6 +279,10 @@
 
 @media screen and (max-width: 650px) {
     .post-card{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .post-card2{
         width: 100%;
         margin-left: 0px;
     }

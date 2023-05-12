@@ -5,6 +5,9 @@ import { useState } from 'react'
 import signup_back from './assets/signup_back.jpg'
 import { useDispatch, useSelector } from 'react-redux'
 
+import google from './assets/icons8-google.svg'
+import facebook from './assets/icons8-facebook.svg'
+
 const Popupfile = () => {
 
     const [signin, setSignin] = useState(true)
@@ -39,8 +42,14 @@ const Popupfile = () => {
                         {!signin ? <button onClick={handle}>Sign In</button> : <button onClick={handle}>Create</button>}
                         {signin ? <center><h6 onClick={() => setSignin(!signin)}>signin</h6></center> : <center><h6 onClick={() => setSignin(!signin)}>Create Account</h6></center>}
                     </div>
-                    <h5>Sign up with Facebook</h5>
+                    <div className='facebook-div'>
+                        <img src={facebook} className='f-icon'/>
+                        <h5>Sign up with Facebook</h5>
+                    </div>
+                    <div className='google-div'>
+                    <img src={google} className='g-icon'/>
                     <h5>Sign up with Google</h5>
+                    </div>
                     {!signin && <h6>Forgot Password?</h6>}
                 </div>
                 <div className='image-div'>

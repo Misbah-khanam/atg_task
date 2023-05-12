@@ -29,6 +29,10 @@
     justify-content: end;
 }
 
+/* background: url(assets/dots-three.svg);
+    -moz-appearance: none;
+    -webkit-appearance: none; */
+
 .post-end select{
     margin-top: 30px;
     margin-bottom: 10px;

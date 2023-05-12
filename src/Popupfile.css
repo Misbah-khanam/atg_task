@@ -47,20 +47,8 @@
     border: 0px solid rgb(0, 81, 255);
 }
 
-.popup-back .popup-main h5{
-    border: 1px solid rgb(231, 231, 231);
-    margin: 0px;
-    padding: 10px;
-    width: 80%;
-    margin: 5px 0px;
-}
 .popup-back .popup-main h6{
-    width: 80%;
-    border: 1px solid rgb(231, 231, 231);
-    margin: 0px;
-    padding: 10px;
-    width: 80%;
-    margin: 5px 0px;
+    margin-left: 30%;
 }
 
 .popup-total{
@@ -90,6 +78,34 @@
 
 .image-div p{
     font-size: 11px;
+}
+
+.popup-main .mobile-btn h6{
+    display: none;
+}
+
+.popup-total .f-icon{
+    width: 20px;
+    height: 20px;
+}
+
+.popup-total .g-icon{
+    width: 20px;
+    height: 20px;
+}
+
+.popup-back .popup-main h5{
+    margin: 0px;
+}
+
+.facebook-div, .google-div{
+    border: 1px solid rgb(231, 231, 231);
+    justify-content: center;
+    padding: 10px;
+    width: 80%;
+    margin: 5px 0px;
+    display: flex;
+    flex-direction: row;
 }
 
 @media screen and (max-width: 1100px){
@@ -137,10 +153,13 @@
     }
 
     .popup-main .mobile-btn h6{
+        display: block;
         left: 0%;
         border: none;
         color:rgb(70, 70, 70);
         font-size: 10px;
         text-decoration:underline;
+        margin: 10px;
     }
+
 }
